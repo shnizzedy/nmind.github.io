@@ -33,7 +33,7 @@ jobs:
         for U_D in $UNDER_DIRECTORIES
         do 
           mv ./book/${U_D} ./book/${U_D:1}
-          grep -rl ${U_D} ./book | xargs sed -i 's/${U_D}/${U_D:1}/g' || true
+          grep -rl ${U_D} ./book | xargs sed -i 's/${U_D}/\/nmind.github.io\/${U_D:1}/g' || true
         done
     - uses: oleksiyrudenko/gha-git-credentials@v2-latest
       with:
