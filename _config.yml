@@ -31,10 +31,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   about the reproducibility of code by independent teams, and challenges 
   arising in the sharing of code between teams due to lack of consistent 
   nomenclature and conventions.
-domain: www.nmind.org
-url: https://www.nmind.org
-baseurl: ""
-locale: en-US
+domain: shnizzedy.github.io # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: "https://shnizzedy.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/nmind.github.io" # the subpath of your site, e.g. /blog
+locale: "en-US"
 
 author:
   name: NMIND
