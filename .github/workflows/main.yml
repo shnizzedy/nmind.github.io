@@ -44,9 +44,11 @@ jobs:
         token: '${{ secrets.SITE_PUSH_SECRET }}'
     - name: Commit
       run: |
+        git fetch origin || true
         git branch -D gh-pages || true
         git checkout -b gh-pages
-        git rm -rf jupyter-book .github "jupyter-book/*" || true
+        # remove source files
+        git rm -rf jupyter-book minimal-mistakes .github || true
         git add * || true
         git commit -m "Publish \"$(git log -1 --pretty=%B)\"" || true
     - name: Push book changes
