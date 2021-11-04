@@ -1,5 +1,5 @@
 ## NMIND
 
-This is the TBD site for NMIND.
+This is the NMIND Jupyter book.
 
-CC-BY
+The purpose is to have documentation that builds nicely from code, can be interactive, pretty, and easily navigable.
