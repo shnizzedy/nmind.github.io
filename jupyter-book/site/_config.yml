@@ -1,5 +1,5 @@
 title: "NMIND"
 author: The NMIND Consortium
 execute:
-  execute_notebooks: "on"
+  execute_notebooks: auto
 
