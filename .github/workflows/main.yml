@@ -46,7 +46,7 @@ jobs:
       run: |
         git branch -D gh-pages || true
         git checkout -b gh-pages
-        git rm -rf jupyter-book .github || true
+        git rm -rf jupyter-book .github "jupyter-book/*" || true
         git add * || true
         git commit -m "Publish \"$(git log -1 --pretty=%B)\"" || true
     - name: Push book changes
